@@ -1,0 +1,11 @@
+div{
+    background-color: lightgray;
+}
+footer{
+    font-size: 7;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 2px 5px #a9a9a9;
+}
