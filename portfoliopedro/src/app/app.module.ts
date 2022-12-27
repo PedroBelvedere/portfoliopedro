@@ -7,6 +7,8 @@ import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
     LogoAPComponent,
     RedesComponent,
     AboutComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    HabilidadesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
