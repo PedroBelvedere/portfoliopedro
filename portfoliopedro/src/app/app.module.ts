@@ -11,6 +11,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { PieComponent } from './components/pie/pie.component';
+import { HttpClientModule } from '@angular/common/http';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { LoginComponent } from './components/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { PieComponent } from './components/pie/pie.component';
     ExperienciaComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    PieComponent
+    PieComponent,
+    InicioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
