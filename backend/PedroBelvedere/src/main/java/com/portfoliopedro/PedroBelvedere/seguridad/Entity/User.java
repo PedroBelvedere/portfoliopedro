@@ -97,6 +97,9 @@ public class User {
         this.roles = roles;
     }
 
+    public boolean existByNombreUsuario(String nombreUsuario){
+    return nombreUsuario == this.nombreUsuario;
+    }
     
     
   }

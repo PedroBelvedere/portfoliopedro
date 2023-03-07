@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
  * @author Pedro Belvedere
  */
 @Repository
-public interface IUserRepositorio extends JpaRepository<Usuario,Long> {
+public interface IUserRepositorioo extends JpaRepository<Usuario,Long> {
     
 }
