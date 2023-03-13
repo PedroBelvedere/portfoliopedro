@@ -9,7 +9,7 @@ const AUTHORITIES_KEY = 'AuthAuthorities';
   providedIn: 'root'
 })
 export class TokenService {
-  roles: Array<String> = [];
+  roles: Array<string> = [];
 
   constructor() { }
 
@@ -33,13 +33,13 @@ export class TokenService {
     return sessionStorage.getItem(USERNAME_KEY)!;
   }
 
-  public setAuthorities(authorities: string): void {
+  public setAuthorities(authorities: string[]): void {
     window.sessionStorage.removeItem(AUTHORITIES_KEY);
     window.sessionStorage.setItem(AUTHORITIES_KEY, JSON.stringify(authorities));
 
   }
 
-  public getAuthorities(): String[]{
+  public getAuthorities(): string[]{
     this.roles = [];
     if(sessionStorage.getItem(AUTHORITIES_KEY)){
       JSON.parse(sessionStorage.getItem(AUTHORITIES_KEY)!).forEach((authority:any) => {

@@ -1,12 +1,12 @@
 <div class="center">
     <h1>ACCEDER</h1>
-    <form>
+    <form (ngSubmit)="onLogin()" novalidate>
       <div class="inputbox">
-        <input type="text" required="required">
+        <input type="text" id="nombreUsuario" name="nombreUsuario" required="required">
         <span>Usuario</span>
       </div>
       <div class="inputbox">
-        <input type="password" required="required">
+        <input type="password" id="password" required="required">
         <span>Contraseña</span>
       </div>
       <div class="inputbox">
