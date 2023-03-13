@@ -6,7 +6,7 @@ FROM alpine:latest
 
 CMD ["/bin/sh"]
 
-docker pull amazoncorretto
+
 FROM amazoncorretto:17-alpine-jdk
 maintainer PedroBelvedere
 COPY target/portfoliopedro.jar portfoliopedro.jar
